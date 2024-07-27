@@ -9,6 +9,22 @@ import (
 
 var pl = fmt.Println
 
+func changevalue2(myptr *int) int {
+	*myptr = 12
+
+}
+
+func dblArrvals(arr *[4]int) int {
+	for x:=0;x<4;x++{
+		arr[x]*=2
+	}
+
+}
+
+func getavg(nums ...float64) float64 {
+	
+}
+
 func main(){
 		// ----- POINTERS -----
 
@@ -17,6 +33,7 @@ func main(){
 	// Print amount and address for amount in memory
 	f4 := 10
 	pl("f4 :", f4)
+	changevalue2(12)
 	pl("f4 Address :", &f4)
 
 	// Store a pointer (Pointer to int)

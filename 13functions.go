@@ -11,6 +11,43 @@ import (
 
 var pl = fmt.Println
 
+func say(){
+	pl("dff")
+}
+
+func summ(x int, y int) int{
+	return x +y
+
+}
+
+func gettwo (x int, y int)(int,int){
+	return x+1,x+2
+}
+
+func getquotient(x float64, y float64) (ans float64, err error){
+	if y == 0 {
+		return 0, fmt.printf("you cant divide by zero")
+
+	}else {
+		return x/y, nil // success case nil
+
+	}
+}
+
+
+// variadic function means unknow number of values receiving
+
+func getsum2(nums ...int) int {
+	sum :=0
+
+	for _,num : range nums {
+		sum += num
+
+	}
+	return sum
+}
+
+
 func main(){
 	// ----- FUNCTIONS -----
 	// func funcName(parameters) returnType {BODY}

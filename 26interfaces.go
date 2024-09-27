@@ -39,3 +39,14 @@ func (c Cat) HappySound() {
 }
 	
 } 
+
+
+var kitty Animal
+
+kitty = Cat("kitty")
+
+kitty.angrysound()
+
+var kitty2 cat = kitty.(cat)
+
+kitty2.attack()
